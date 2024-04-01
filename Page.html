@@ -1,0 +1,96 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <h1>Product Page</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <i class="fas fa-shopping-cart"></i>
+        </ul>
+    </nav>
+
+    <div class="flex-box">
+        <div class="left">
+            <div class="big-img">
+                <img src="p1.jpg">
+            </div>
+            <div class="images">
+                <div class="small-img">
+                    <img src="p1.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="p2.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="p3.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="p4.jpg" onclick="showImg(this.src)">
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="url">Home > Product > T-Shirt</div>
+            <div class="pname">T-Shirts for Men</div>
+<br>
+            <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price"><b>MRP:</b>Rs.500 </div>
+		<div><s>Rs.799</s></div>
+<br>
+		<p>Care Instructions: Machine Wash<br>
+			Fit Type: Oversized Fit<br>
+			Fabric: Cotton<br>
+			Neckline: Crew Neck<br>
+			Sleeves: Half-slevees<br>
+			More comfortable for your classic everyday look.<br>
+     		</p>
+<br>
+            <div class="product-size">
+                <strong>Size:</strong>
+                <label><input type="radio" name="size" value="S"> S</label>
+                <label><input type="radio" name="size" value="M"> M</label>
+                <label><input type="radio" name="size" value="L"> L</label>
+                <label><input type="radio" name="size" value="XL"> XL</label>
+            </div>
+<br>
+            <div class="quantity">
+                <p>Quantity :</p>
+                <input type="number" min="1" max="7" value="1">
+            </div>
+<br>
+     <div class="availability">
+<p><b>Availability</b>  :  7 in Stock</p>
+            <div class="btn-box">
+                <button class="cart-btn">Add to Cart</button>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let bigImg = document.querySelector('.big-img img');
+        function showImg(pic){
+            bigImg.src = pic;
+        }
+    </script>
+</body>
+</html>
